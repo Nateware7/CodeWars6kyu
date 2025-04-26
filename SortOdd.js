@@ -26,6 +26,9 @@ function sortArray(array) {
     return array.map(num => (num % 2 !== 0 ? Odd[oddIndex++] : num))
 }
 
+const result = sortArray([5, 8, 6, 3, 4, 9, 2, 7]);
+console.log(result);
+
 
 function sortArray(array) {
     const odd = array.filter((x) => x % 2).sort((a, b) => a - b).reverse()
